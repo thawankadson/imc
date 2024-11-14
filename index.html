@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Modelo</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+  <section class="container">
+    <h1>Tabela IMC</h1>
+      <form action="/" id="form" method="POST">
+        <label for="peso">Peso</label>
+        <input type="text" id="peso" name="peso">
+        <label for="altura">Altura</label>
+        <input type="text" id="altura" name="altura">
+        <button type="submit">Enviar</button>
+      </form>
+
+      <div id="resultado"></div>
+
+      <div class="info">
+        <h2>IMC</h2>
+        <p>Valores de referência:</p>
+        
+        <div id="bmi-status" class="status">Status do Peso</div>
+
+        <ul>
+          <li>Menor que 18,5: Abaixo do peso <span id="abaixo"></span></li>
+          <li>Entre 18,5 e 24,9: Peso normal <span id="normal"></span></li>
+          <li>Entre 25 e 29,9: Sobrepeso <span id="sobrepeso"></span></li>
+          <li>30 ou maior: Obesidade <span id="obesidade"></span></li>
+        </ul>
+      </div>
+
+  </section>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
